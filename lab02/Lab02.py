@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-from SimpleCV import Camera, Image, Display, Matplotlib
+from SimpleCV import Camera, Image, Display, Matplotlib.pyplot
 c = Camera()
 i = c.getImage()
 i.save('imagen_normal.png')
