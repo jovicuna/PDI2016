@@ -13,10 +13,27 @@ ig.show()
 #Histograma
 hist = ig.histogram(255)
 plt.plot(hist)
-max = np.max(hist)
-#Segmentacion
-ibin = ig.binarize(max)
-ibin.save('imagen_binaria.png')
-ibin.show()
-#Muestra del histograma
 plt.show()
+#Segmentacion de mascaras
+r1 = 117
+r2 = 132
+r3 = 173
+
+#Mascara 1
+ibin = ig.binarize(r1)
+ibin.save('imagen_mascara_1.png')
+ibin.show()
+
+#Mascara 2
+ibin = ig.binarize(r2)
+ibin.save('imagen_mascara_2.png')
+ibin.show()
+
+#Mascara 3
+ibin = ig.binarize(r3)
+ibin.save('imagen_mascara_3.png')
+ibin.show()
+
+
+
+
