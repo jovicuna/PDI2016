@@ -16,19 +16,24 @@ plt.plot(hist)
 plt.show()
 #Segmentacion de mascaras
 r1 = 117
-r2 = 132
-r3 = 173
+r2 = 165
+r3 = 170
 
 #Mascara 1
-ibin = ig.binarize(r1)
-ibin.save('imagen_mascara_1.png')
-ibin.show()
+ibin1 = ig.binarize(r1)
+ibin1.save('imagen_mascara_1.png')
+ibin1.show()
 
 #Mascara 2
-ibin = ig.binarize(r2)
-ibin.save('imagen_mascara_2.png')
-ibin.show()
+ibin2 = ig.binarize(r2)
+ibin2.save('imagen_mascara_2.png')
+ibin2.show()
 
+#sin texto
+i3= ibin2 - ibin1
+i3.save('imagen_diferencia.png')
+i3.show()
+ 
 #Mascara 3
 ibin = ig.binarize(r3)
 ibin.save('imagen_mascara_3.png')
