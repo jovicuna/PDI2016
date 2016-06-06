@@ -1,4 +1,3 @@
-
 #Procesamiento digital de imagenes: Laboratorio 03 - Junio 2016
 #Alumnos: Katherine Duguet && Joaquín Vicuña
 from SimpleCV import Camera , Image, Display
@@ -46,21 +45,18 @@ red.save('Captura_rojo.png')
 hist_r = red.histogram(255)
 plt.plot(hist_r)
 plt.show()
-#plt.save('histogram_gray.png')
     
 green.save('Captura_verde.png')
 #Verde
 hist_g = green.histogram(255)
 plt.plot(hist_g)
 plt.show()
-#plt.save('histogram_gray.png')
     
 blue.save('Captura_azul.png')
 #Azul
 hist_b = blue.histogram(255)
 plt.plot(hist_b)
 plt.show()
-#plt.save('histogram_gray.png')
 
 #Escala de grises
 igr = img.grayscale()
