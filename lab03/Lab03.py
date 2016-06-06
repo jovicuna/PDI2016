@@ -71,6 +71,10 @@ plt.show()
 #[Recordar que los parametros para la funcion edges de SimpleCV
 #los modificamos en funcion de los valores del histograma que tenemos anteriormente para cada canal]
 
+ir = Image('Captura_rojo.png')
+ig = Image('Captura_verde.png')
+ib = Image('Captura_azul.png')
+
 #(...)Para escala de grises
 b_gr = igr.edges(t1=3,t2=5)
 b_gr.save('Borde_gris.png')
