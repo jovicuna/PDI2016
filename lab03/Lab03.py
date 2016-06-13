@@ -121,5 +121,39 @@ if m==1:
     b_b = b_b1 + b_b2
     b_b.save('Borde_azul_T.png')
 if m == 2:
-    os.chdir(path2)
+    os.chdir(path3)
+
+    c = Camera()
+
+    img1 = c.getImage()
+    img1.save('C1.png')
+
+    img2 = c.getImage()
+    img2.save('C2.png')
+
+    img3 = c.getImage()
+    img3.save('C3.png')
     
+    I1 = misc.I1()
+    I2 = misc.I2()
+    I3 = misc.I3()
+
+    misc.imsave('C1.png')
+    misc.imsave('C2.png')
+    misc.imsave('C3.png')
+
+    I1 = misc.imread('C1.png',I1)
+    I2 = misc.imread('C2.png',I2)
+    I3 = misc.imread('C3.png',I3)
+
+    (red1,green1,blue1) = I1.splitChannels(False)
+    (red2,green2,blue2) = I2.splitChannels(False)
+    (red3,green3,blue3) = I3.splitChannels(False)
+
+    I1.shape(480,640,3) , I1.dtype('unit8')
+    I2.shape(480,640,3) , I2.dtype('unit8')
+    I3.shape(480,640,3) , I3.dtype('unit8')
+
+    cnt = 0
+    cnt_p = 0
+    ceros = np.zeros((480,640))
