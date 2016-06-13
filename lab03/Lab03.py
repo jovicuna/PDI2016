@@ -137,17 +137,17 @@ if m == 2:
     img3 = c.getImage()
     img3.save('C3.png')
     
-    I1 = misc.I1()
-    I2 = misc.I2()
-    I3 = misc.I3()
+    #I1 = misc.I1()
+    #I2 = misc.I2()
+    #I3 = misc.I3()
 
-    misc.imsave('C1.png')
-    misc.imsave('C2.png')
-    misc.imsave('C3.png')
+    misc.imsave('C1.png',I1)
+    misc.imsave('C2.png',I2)
+    misc.imsave('C3.png',I3)
 
-    I1 = misc.imread('C1.png',I1)
-    I2 = misc.imread('C2.png',I2)
-    I3 = misc.imread('C3.png',I3)
+    I1 = misc.imread('C1.png')
+    I2 = misc.imread('C2.png')
+    I3 = misc.imread('C3.png')
 
     (red1,green1,blue1) = I1.splitChannels(False)
     (red2,green2,blue2) = I2.splitChannels(False)
