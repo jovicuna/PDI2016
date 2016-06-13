@@ -4,6 +4,9 @@ from SimpleCV import Camera , Image, Display
 import os
 import sys
 import matplotlib.pyplot as plt
+import numpy as np
+import cv2
+from scipy import misc
 
 #Creamos nuestra base de datos
 name = raw_input("Ingrese nombre de paciente: ") #Ingresamos un string con el nombre del paciente
