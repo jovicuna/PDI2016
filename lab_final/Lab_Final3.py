@@ -17,3 +17,11 @@ hist = i.histogram(255)
 plt.plot(hist)
 plt.show()
 
+dil = i.dilate(200)
+dil.save('Dil.png')
+
+prom = (i+dil)/2
+prom.save('Prom.png')
+
+suma = (i + dil)
+suma.save('Sum.png')
